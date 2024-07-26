@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" style="image/png" href="logo.png" />
+    <title>     ios  دكتور</title>
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/fail/Application.css">
+
+</head>
+
+<body>
+    <section class="main">
+        <div class="header">
+            <img src="logo.png" class="imageshadow"><!--صورة brand-->
+            <h1 class="h1">   ios  دكتور</h1><!--اسم brand-->
+        </div>
+        <div class="text">
+ 
+            <a class="Instagram" href="https://www.instagram.com/dr__ios">
+                <span style="margin-right: 1rem;">Instagram</span>
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+            </a>
+
+            <a class="FacicBook" href="https://t.me/Dr_ioss">
+                <span style="margin-right: 1rem;">Telegram</span>
+                <i class="fa-brands fa-telegram fa-2xl"></i>
+            </a>
+
+           
+            <a class="Snapchat" href="https://www.snapchat.com/add/dr_ioss">
+                <span style="margin-right: 1rem;">Snapchat</span>
+                <i class="fa-brands fa-snapchat fa-2xl"></i>
+            </a>
+            <a class="YouTube" href="https://youtube.com/@dr_ioss">
+                <span style="margin-right: 1rem;">YouTube</span>
+                <i class="fa-brands fa-youtube fa-2xl"></i>
+
+                <a class="Twitter" href="https://twitter.com/Dr___IOS/">
+                    <span style="margin-right: 1rem; font-size: 32px;">𝕏</span>
+                </a>
+                <a class="FacicBook" href="https://store-ios.com">
+                    <span style="margin-right: 1rem;">متجر دكتور ios لتطبيقات بلس</span>
+                    <i class="fa-brands fa-app-store-ios fa-2xl"></i>
+                </a>
+                <a class="WhatsApp" href="https://chat.whatsapp.com/C4o3NtOt5Qa9q0Qz508FaZ">
+                    <span style="margin-right: 1rem;">قروب الايفون والجلبريك  </span>
+                    <i class="fa-brands fa-whatsapp fa-2xl "></i>
+                </a>
+                <a class="WhatsApp" href="https://chat.whatsapp.com/E9a2ADuWYeF8GAtKvIdWKS">
+                    <span style="margin-right: 1rem;">قروب الاندرويد</span>
+                    <i class="fa-brands fa-whatsapp fa-2xl "></i>
+                </a>
+            </a>
+            <a class="WhatsApp" href="https://chat.whatsapp.com/FiwxEJ0PijRBq2CMV2kLRp">
+                <span style="margin-right: 1rem;">  قروب IPA للجلبريك وترولستور</span>
+                <i class="fa-brands fa-whatsapp fa-2xl "></i>
+            </a>
+            <a class="WhatsApp" href="https://chat.whatsapp.com/CkfOzDFoqFQ2aMXdHwFrJF">
+                <span style="margin-right: 1rem;">قروب خلفيات الايفون</span>
+                <i class="fa-brands fa-whatsapp fa-2xl "></i>
+            </a>
+        </div>
+        </div>
+
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var links = document.querySelectorAll('.text a');
+            var textContainer = document.querySelector('.text');
+
+            // Check if the number of links is greater than 4
+            if (links.length > 4) {
+                // Set overflow to auto
+                textContainer.style.overflowY = 'auto';
+                textContainer.style.overflowX = 'auto';
+
+                // Set the height and width for each link
+                links.forEach(function (link) {
+                    link.style.height = '50px';
+                    link.style.width = '95%';
+                });
+            }
+        });
+
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var links = document.querySelectorAll('.text a');
+            links.forEach(function (link, index) {
+                setTimeout(function () {
+                    link.style.opacity = '1'; // Set opacity to 1 after delay
+                    link.style.transform = 'translateX(0)'; // Slide link into view from right side
+                }, (index + 1) * 90); // Delay appearance by (index + 1) * 3 seconds
+            });
+        });
+    </script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="fail/sparkline.js"></script>
+
+</html>

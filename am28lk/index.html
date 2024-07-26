@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>اميرة الكون</title>
+         <link rel="icon" style="image/png" href="logo.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+  <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--الجزء المسؤول عن التصميم الشكل و الالوان-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        .image-shadow {
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+      </style>
+      
+      
+<!--الجزء الخاص بالمحتوي-->
+    <body>
+        <div class="container">
+            <div class="column"> 
+                <img src="./logo2.png" class="w-100 h-auto my-3 " >
+            </div>
+            <div class="column">
+                <img src="./logo.png" class="round rounded-circle w-100 h-auto my-3 image-shadow" >
+                  
+               
+             
+              </div>
+             
+          </div>
+        <!--الخلايا-->
+        <div class="variable-element">
+            <div class="new-element" onclick="zoomIn(this)">
+                <span class="element-text">Snapchat</span>
+                <a href="https://www.snapchat.com/add/am28lk?share_id=dRrpsC80Q_GeUc6Jg9CBgA&locale=ar_AE" id="snapchat-link">
+                    <i class="fa-brands fa-snapchat fa-2xl"></i>
+                </a>
+            </div>
+            <div class="new-element" onclick="zoomIn(this)">
+                <span class="element-text">TikTok</span>
+                <a href="https://www.tiktok.com/@am28lk?_t=8kTXrbBS0Th&_r=1">
+                    <i class="fa-brands fa-tiktok fa-2xl"></i>
+                </a>
+            </div>
+            <div class="new-element" onclick="zoomIn(this)">
+                <a href="https://www.instagram.com/am28lk?igsh=aDhidTEzanNtcG1x" onclick="event.stopPropagation();">
+                    <span class="element-text">Instagram</span>
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </a>
+            </div>
+        
+            <div class="new-element" onclick="zoomIn(this)">
+                <span class="element-text">WhatsApp</span>
+                <a href="http://wa.me/+96895908888" onclick="event.stopPropagation();">
+                    <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                </a>  
+            </div>
+        
+            <div class="new-element" onclick="zoomIn(this)">
+                <a href="https://www.youtube.com/@am28lk">
+                    <span class="element-text">YouTube</span> 
+                    <i class="fa-brands fa-youtube fa-2xl"></i>
+                </a>
+            </div>
+        </div>
+         <div id="footer"> <a href="http://wa.me/+96894443706" >  &#169; 2024 ALYASI </a>  </div>
+         
+        <script>
+            function zoomIn(element) {
+                element.classList.add("active");
+        
+                setTimeout(function() {
+                    var link = element.querySelector("a").getAttribute("href");
+                    window.location.href = link;
+                }, 200);
+            }
+        </script>
+        
+      
+    </html>
